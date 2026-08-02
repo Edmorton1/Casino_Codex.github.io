@@ -4,7 +4,7 @@ import { SlotsPage } from './pages/SlotsPage'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Casino_Codex">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/slots" element={<SlotsPage />} />
