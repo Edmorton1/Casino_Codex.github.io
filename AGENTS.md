@@ -35,3 +35,57 @@
 
 # ExecPlans
 When writing complex features or significant refactors, use an ExecPlan (as described in ./PLANS.md) from design to implementation.
+
+# Project Guidelines
+
+## Architecture
+
+Use this project structure:
+
+- pages — application pages
+- components — reusable UI components
+- features — business logic grouped by feature
+- store — global state
+- hooks — custom React hooks
+- utils — helper functions
+- assets — static resources
+
+## Rules
+
+- Keep components small and focused.
+- Separate UI from business logic.
+- Do not put game logic inside React components.
+- Avoid unnecessary abstractions.
+- Do not create complex architecture for simple features.
+- Prefer simple and readable code.
+
+## Current project
+
+This is a frontend-only casino demo.
+
+No:
+- backend
+- database
+- API
+- authentication
+
+State is stored locally.
+
+## Main features
+
+Pages:
+- Home
+- Slots
+
+Features:
+- virtual balance
+- slot machine
+- betting
+- win calculation
+
+## Code style
+
+- Use TypeScript.
+- Follow existing project style.
+- Reuse existing components before creating new ones.
+- Explain major architectural changes before implementing them.
